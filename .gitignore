@@ -1,0 +1,5 @@
+FlightDeck.sublime-workspace
+FlightDeck.sublime-project
+/vendor
+.env
+.env.example

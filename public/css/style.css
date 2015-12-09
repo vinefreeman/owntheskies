@@ -1,0 +1,191 @@
+body, body.login{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                display: table;
+                font-weight: 100;
+                font-family: 'Lato';
+                background-color: #222;
+                text-align: center;
+                color: #ffff00;
+            }
+body.login{
+    background: url(/images/login_a380.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+.login form{
+padding: 40px;
+text-align: left;
+background-color: #222;
+opacity: 0.7;
+border: 1px solid #656518;
+font-size: 26px
+}
+.login form input{
+    background-color: #111;
+    border: none;
+    padding: 6px;
+    color: #ffff00;
+    width: 100%
+}
+.login button.btn-default{
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;;
+    width: 100%;
+    border-radius: 0;
+    margin-top: 20px;
+    background-color: #ffff00;
+}
+
+.login button.btn-default:hover{
+    background-color: #CCCC04
+}
+.login p.help{
+    color: #ffff00;
+    font-size: 14px
+}
+p.help a, p a{
+    color: #ffff00;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+p a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+p.help a.submit
+{
+
+    color: #fff;
+    text-decoration: none;
+}
+.right{
+    float: right;
+    display: block;
+}
+a.login{
+    float: right;
+    margin-top: -10px;
+}
+
+.edit{
+    text-align: left;
+}
+h1 {
+	text-align: center;
+}
+h1 span.glyphicon{
+    font-size: 70% !important;
+}
+p.system{
+    color: #666;
+    display: inline-block;
+    margin-top: 20px
+}
+.container {
+	padding: 40px;
+}
+
+.container li{
+	list-style-type: none;
+}
+
+.container li a{
+	text-decoration: none;
+	color: #666;
+    padding: 10px 20px;
+    font-size: 30px;
+    display: inline-block;
+}
+.container li a:hover{
+    background-color: #ffff00;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    }
+
+.container li a:active{
+    background-color: #111;
+    color: #ffff00;
+}
+
+a.button{
+    background-color: #ffff00;
+    color: #333;
+    font-weight: bold;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 40px;
+    border-bottom: 3px solid #333;
+    display: inline-block;
+}
+a.button:hover{
+    background-color: #333;
+    color: #ffff00;
+    border-bottom: 3px solid #666;
+}
+
+a.button:active{
+    background-color: #111;
+    color: #ffff00;
+    border-bottom: 3px solid #222;
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+ 
+.fade-in.one {
+-webkit-animation-delay: 0.3s;
+-moz-animation-delay: 0.3s;
+animation-delay: 0.3s;
+}
+.fade-in.two {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay:0.7s;
+animation-delay: 0.7s;
+}
+.fade-in.three {
+-webkit-animation-delay: 0.9s;
+-moz-animation-delay:0.9s;
+animation-delay: 0.9s;
+}
+
+hr{
+    border: 0;
+    border-bottom: 1px dashed #333;
+}
+
+/*
+Login elements
+*/
+.login{
+    background: url(images/login_a380.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
