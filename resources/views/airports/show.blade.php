@@ -6,7 +6,7 @@
     <h2 class="fade-in one">IATA Code: {{ $airport->code }}</h2>
     <h3>This airport is located in {{ $airport->city }}, it currently has {{ $airport->terminals }} terminal(s), and is a {{ $airport->type }} classification airport.</h3>
 </div>
-
+<!--Comment -->
    @if($airport->imglink)
    <div class="row fade-in two">
 	    <div class="col-md-6 col-md-offset-3">
