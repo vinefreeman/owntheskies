@@ -55,17 +55,29 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => getenv('DB_HOST'),
-            'database'  => getenv('DB_NAME'),
-            'username'  => getenv('DB_USER'),
-            'password'  => getenv('DB_PASSWORD'),
+            'host'      => env('DB_HOST'),
+            'database'  => env('DB_NAME'),
+            'username'  => env('DB_USER'),
+            'password'  => env('DB_PASSWORD'),
             'charset'   => 'utf8',
             'port'      => '3306',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
             'strict'    => false,
-           'unix_socket'    => '/var/run/mysqld/mysqld.sock',
         ],
+
+        'mysql-tunnel' => [
+                'driver'    => 'mysql',
+                'host'      => '127.0.0.1',
+                'port'      => '13306',
+                'database'  => 'owntheskies',
+                'username'  => 'owntheskies',
+                'password'  => env('DB_PASSWORD', ''),
+                'charset'   => 'utf8',
+                'collation' => 'utf8_unicode_ci',
+                'prefix'    => '',
+                'strict'    => false,
+            ],
 
         'pgsql' => [
             'driver'   => 'pgsql',

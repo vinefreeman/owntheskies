@@ -6,8 +6,8 @@
 <div class="col-md-6 col-md-offset-3 col-sm-12">
 <h2 class="loginHeader">PILOT REGISTRATION</h2>
 <form method="POST" action="/auth/register">
-    {!! csrf_field() !!}
-
+   <!-- {!! csrf_field() !!}-->
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
      <div class="form-group">
         Name
         <input type="text" name="name" value="{{ old('name') }}">
