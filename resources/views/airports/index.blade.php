@@ -1,5 +1,5 @@
 @extends('default')
-
+@section('bodyClass', 'category')
 @section('content')
 	<h2 class="fade-in one">Welcome to flightdeck pilot {{ Auth::user()->name }}, have a look at the available airports below.</h2>
 	<hr />
