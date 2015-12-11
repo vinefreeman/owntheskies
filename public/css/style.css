@@ -186,8 +186,9 @@ hr{
 .airportsingle h3{
     text-align: left;
 }
-.descrip p{
-    text-align: left
+.descrip {
+    text-align: left;
+    margin-top: 30px;
 }
 .descrip .glyphicon, .airportdetail .glyphicon{
     float: left;
