@@ -10,7 +10,7 @@ class Airport extends Eloquent{
 	**/
 
 	protected $fillable = [
-		'title', 'code', 'slug', 'imglink', 'description'
+		'title', 'code', 'slug', 'imglink', 'descrip'
 	];
 
 }
