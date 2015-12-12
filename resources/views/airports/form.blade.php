@@ -22,6 +22,11 @@
 	    		{!! $errors->first('imglink','<span class="help-block">:message</span>') !!}
 	    	</div>
 
+			<div class="form-group {{ $errors->has('descrip') ? 'has-error' : '' }}">
+				{!! Form::label('descript', 'Short Description:') !!}
+	    		{!! Form::textarea('descrip', null, ['class' => 'form-control' ]) !!}
+	    		{!! $errors->first('descrip','<span class="help-block">:message</span>') !!}
+	    	</div>
 	    		
 	    	<div class="form-group">
 		    	{!! Form::button('<i class="glyphicon glyphicon-flash"></i> Update Airport', array('type' => 'submit', 'class' => 'btn btn-success')) !!}
