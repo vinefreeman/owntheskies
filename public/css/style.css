@@ -8,6 +8,8 @@ body, body.login{
                 background-color: #222;
                 text-align: center;
                 color: #ffff00;
+                webkit-font-smoothing: antialiased;
+                font-smoothing: antialiased;
             }
 body.login{
     background: url(/images/login_a380.jpg) no-repeat center center fixed; 
@@ -68,8 +70,8 @@ p.help a.submit
     display: block;
 }
 a.login{
-    float: right;
-    margin-top: -10px;
+    /*float: right;
+    margin-top: -10px;*/
 }
 
 .edit{
@@ -229,7 +231,21 @@ form elements
 .form-group label{
     font-size: 16px;
 }
-
+#menu-toggle{
+    height: 40px;
+    width:40px;
+    position: absolute;
+    left: 0px;
+    display: block;
+    margin-top: -10px;
+    background-color: #151513;
+    border-left: 1px solid #000;
+    color: #666;
+}
+#menu-toggle .glyphicon{
+    margin-top: 12px;
+    vertical-align: middle;
+}
 /*
 Login elements
 */
