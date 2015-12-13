@@ -3,10 +3,10 @@
 @section('content')
 	<div class="edit">
 	    <h1><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> EDITING: {{ $airport->title }}</h1>
-	    <h2 class="fade-in one"></h2>
+	    <h2 class=""></h2>
 	    <!-- illuminate form elements i config/app.php -->
 
-	    {!! Form::model($airport, ['route' => ['airport_path', $airport->slug], 'method' => 'PATCH', 'class' => 'fade-in two']) !!}
+	    {!! Form::model($airport, ['route' => ['airport_path', $airport->slug], 'method' => 'PATCH', 'class' => '']) !!}
 
 	    	@include ('airports.form')
 

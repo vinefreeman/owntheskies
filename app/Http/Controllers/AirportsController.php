@@ -74,7 +74,9 @@ class AirportsController extends Controller
      public function store(CreateAirportRequest $request, Airport $airport)
     {   
        $airport->create($request->all());
-       return redirect()->route('airports_path');
+       \Session::flash('flash_message', 'Success! Airport created');
+         return redirect('airports/' .  $airport->slug);
+      // return redirect()->route('airports_path');
     }
 
     /**
@@ -87,6 +89,7 @@ class AirportsController extends Controller
     {   
         //$airport = $this->airport->whereSlug($slug)->first();
         return view('airports.edit', compact('airport'));
+
     }
 
     /**
@@ -100,15 +103,15 @@ class AirportsController extends Controller
         // $airport = $this->airport->whereSlug($slug)->first();
 
          $airport->fill($request->input())->save();
-
-         return redirect('/');
+        \Session::flash('flash_message', 'Success! Airport updated');
+         return redirect('airports/' .  $airport->slug);
     }
 
     public function destroy(Airport $airport)
     {
         
         $airport->delete();
-
+        \Session::flash('flash_message', 'Success! Airport deleted');
         return redirect('airports');
     }
 
