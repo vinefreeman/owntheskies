@@ -30,7 +30,7 @@
                 <hr />
                 
                     <li>
-                        <a href="/auth/logout" class="login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><br />Logout</a>
+                        <a href="/auth/logout" class="login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><br />Logout<br />{{ Auth::user()->name }}</a>
                     </li>
                @endif
             </ul>

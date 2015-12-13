@@ -10,6 +10,7 @@ body, body.login{
                 color: #ffff00;
                 webkit-font-smoothing: antialiased;
                 font-smoothing: antialiased;
+                text-rendering: optimizeLegibility;
             }
 body.login{
     background: url(/images/login_a380.jpg) no-repeat center center fixed; 
