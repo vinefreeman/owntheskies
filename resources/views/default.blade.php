@@ -8,8 +8,10 @@
         <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
     </head>
     <body class="@yield('bodyClass')">
+
     <div id="wrapper" class="">
       <!-- Sidebar -->
+    
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
@@ -18,6 +20,7 @@
                        FlightDeck
                     </a>
                 </li>
+                @if (Auth::check())
                 <li>
                     {!! link_to_route('airports_path', 'AIRPORTS') !!}
                 </li>
@@ -25,13 +28,14 @@
                     <a href="#">ADMIN</a>
                 </li>
                 <hr />
-                @if (Auth::check())
+                
                     <li>
                         <a href="/auth/logout" class="login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><br />Logout</a>
                     </li>
-                @endif
+               @endif
             </ul>
         </div>
+         
         <!-- /#sidebar-wrapper -->
 	    <div class="container" id="page-content-wrapper">
         @if (Session::has('flash_message'))
