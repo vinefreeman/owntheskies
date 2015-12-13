@@ -1,7 +1,7 @@
 @extends('default')
 
 @section('content')
-	<div class="edit">
+	<div class="edit col-md-offset-1 col-md-10">
 	    <h1><span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> EDITING: {{ $airport->title }}</h1>
 	    <h2 class=""></h2>
 	    <!-- illuminate form elements i config/app.php -->
