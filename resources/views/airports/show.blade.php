@@ -10,7 +10,10 @@
     <div class="airportdetail">
        <span class="glyphicon glyphicon-console" aria-hidden="true"></span>
        <h3 class="fade-in one">IATA Code: <span>{{ $airport->code }}</span></h3>
-        <h3>Airport Location: <span>{{ $airport->city }} ({{ $airport->country }})</span></h3><h3>Terminal(s): <span>{{ $airport->terminals }}</span></h3><h3></span>Classification: <span>{{ $airport->type }}</span></h3>
+        <h3>Airport Location: <span>{{ $airport->city }} ({{ $airport->country }})</span></h3>
+        <h3>Terminal(s): <span>{{ $airport->terminals }}</span></h3>
+        <h3></span>Runway(s): <span>{{ $airport->runways }}</span></h3>
+        <h3></span>Classification: <span>{{ $airport->type }}</span></h3>
     </div>
     @if($airport->descrip)
         <div class="descrip">

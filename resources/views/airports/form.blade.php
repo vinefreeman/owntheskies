@@ -22,6 +22,35 @@
 	    		{!! $errors->first('imglink','<span class="help-block">:message</span>') !!}
 	    	</div>
 
+	    	<div class="form-group {{ $errors->has('city') ? 'has-error' : '' }}">
+				{!! Form::label('city', 'City:') !!}
+	    		{!! Form::text('city', null, ['class' => 'form-control' ]) !!}
+	    		{!! $errors->first('city','<span class="help-block">:message</span>') !!}
+	    	</div>
+
+	    	<div class="form-group {{ $errors->has('country') ? 'has-error' : '' }}">
+				{!! Form::label('country', 'Country:') !!}
+	    		{!! Form::text('country', null, ['class' => 'form-control' ]) !!}
+	    		{!! $errors->first('country','<span class="help-block">:message</span>') !!}
+	    	</div>
+
+	    	<div class="form-group {{ $errors->has('terminals') ? 'has-error' : '' }}">
+				{!! Form::label('terminals', 'Terminals:') !!}
+	    		{!! Form::text('terminals', null, ['class' => 'form-control' ]) !!}
+	    		{!! $errors->first('terminals','<span class="help-block">:message</span>') !!}
+	    	</div>
+
+	    	<div class="form-group {{ $errors->has('runways') ? 'has-error' : '' }}">
+				{!! Form::label('runways', 'Runways:') !!}
+	    		{!! Form::text('runways', null, ['class' => 'form-control' ]) !!}
+	    		{!! $errors->first('runways','<span class="help-block">:message</span>') !!}
+	    	</div>
+
+	    	<div class="form-group {{ $errors->has('type') ? 'has-error' : '' }}">
+				{!! Form::label('type', 'Type:') !!}
+	    		{!! Form::text('type', null, ['class' => 'form-control' ]) !!}
+	    		{!! $errors->first('type','<span class="help-block">:message</span>') !!}
+	    	</div>
 			<div class="form-group {{ $errors->has('descrip') ? 'has-error' : '' }}">
 				{!! Form::label('descrip', 'Short Description:') !!}
 	    		{!! Form::textarea('descrip', null, ['class' => 'form-control' ]) !!}
