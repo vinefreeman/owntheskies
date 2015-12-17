@@ -13,12 +13,13 @@ body, body.login{
                 text-rendering: optimizeLegibility;
             }
 body.login{
-    background: url(/images/login_a380.jpg) no-repeat center center fixed; 
+    /*background: url(/images/login_a380.jpg) no-repeat center center fixed; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover;
+      background-size: cover;*/
 }
+
 .login form{
 padding: 40px;
 text-align: left;
@@ -247,9 +248,37 @@ form elements
     margin-top: 12px;
     vertical-align: middle;
 }
+.airportimglist{
+    background-repeat:  no-repeat;
+    background-position: center;  
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: 90% 100%;
+      height: 130px;
+      margin-bottom: 30px;
+}
+.airportimglist a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #333;
+}
 /*
 Login elements
 */
+#video-background {
+/*  making the video fullscreen  */
+      position: fixed;
+      right: 0; 
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+      width: auto; 
+      height: auto;
+      z-index: -100;
+      opacity: .3;
+}
 .login{
     background: url(images/login_a380.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;

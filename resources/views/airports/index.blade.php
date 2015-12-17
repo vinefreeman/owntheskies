@@ -8,5 +8,13 @@
     	<li class="fade-in three"><h2><a href="/airports/{{ $airport->slug}}">{{ $airport->title }} ({{ $airport->code }})</a></h2></li>
     @endforeach
     <hr />
+
     <a href="/airports/create" class="btn btn-success fade-in three"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Add New Airport</a>
+<hr />
+ @foreach ($airports as $airport)
+    	<div class="col-md-3 fade-in three airportimglist" style="background-image: url('{{ $airport->imglink }}')"><a href="/airports/{{ $airport->slug}}">{{ $airport->title }}</a>
+
+    	</div>
+    @endforeach
+
 @stop

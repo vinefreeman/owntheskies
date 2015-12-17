@@ -18,6 +18,11 @@
     padding-left: 100px;
 }
 
+.login #wrapper.toggled {
+    padding-left: 0px;
+}
+
+
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -37,6 +42,8 @@
 #wrapper.toggled #sidebar-wrapper {
     width: 100px;
 }
+
+
 
 #page-content-wrapper {
     width: 100%;
@@ -124,6 +131,11 @@ a.login{
     #wrapper.toggled #sidebar-wrapper {
         width: 10px;
     }
+
+    .login #wrapper.toggled #sidebar-wrapper {
+        width: 0px;
+    }
+
 
     #page-content-wrapper {
         padding: 20px;
