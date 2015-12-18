@@ -41,11 +41,11 @@
          
         <!-- /#sidebar-wrapper -->
 	    <div class="container" id="page-content-wrapper">
-        @if (Session::has('flash_message'))
-            <div style="position: absolute; right: 0px; top: 0px; margin: 15px; z-index:99; opacity 0.5" class="alert alert-info"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ Session::get('flash_message') }}</div>
-        @endif
-       
-            
+            @if (Session::has('flash_message'))
+                <div style="position: absolute; right: 0px; top: 0px; margin: 15px; z-index:99; opacity 0.5" class="alert alert-info">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ Session::get('flash_message') }}
+                </div>
+            @endif
             <a href="#menu-toggle" class="menutoggle" id="menu-toggle"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
 	    	@yield('content')
 	    </div>

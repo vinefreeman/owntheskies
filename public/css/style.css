@@ -256,6 +256,7 @@ form elements
     background-color: #151513;
     border-left: 1px solid #000;
     color: #666;
+    z-index: 99;
 }
 #menu-toggle .glyphicon{
     margin-top: 12px;
