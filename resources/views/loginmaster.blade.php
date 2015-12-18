@@ -15,5 +15,6 @@
 	</div><!-- #main page wrapper -->
 	<div id="video-background" style="opacity: 0.4;position: fixed; z-index: -99; width: 100%; height: 100%" >
   <iframe frameborder="0" height="100%" width="100%" src="https://www.youtube.com/embed/eEGhgcMIt9s?playlist=eEGhgcMIt9s&autoplay=1&controls=0&showinfo=0&autohide=1&rel=0" frameborder="0" allowfullscreen></iframe>
+  </div>
     </body>
 </html>
