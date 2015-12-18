@@ -22,10 +22,13 @@
                 </li>
                 @if (Auth::check())
                 <li>
-                    {!! link_to_route('airports_path', 'AIRPORTS') !!}
+                    <a href="/">Dashboard</a>
                 </li>
                 <li>
-                    <a href="#">ADMIN</a>
+                    {!! link_to_route('airports_path', 'Airports') !!}
+                </li>
+                <li>
+                    <a href="#">Admin</a>
                 </li>
                 <hr />
                 

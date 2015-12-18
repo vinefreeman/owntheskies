@@ -32,8 +32,5 @@
         <p class="help right">*New here?   <a href='/auth/register' class="btn btn-success submit">Register first</a></p>
     </div>
 </div>
-<video autoplay loop id="video-background" muted>
-  <source src="https://skyfiregcs-a.akamaihd.net/exp=1450395748~acl=%2A%2F428326949.mp4%2A~hmac=00a10f40c250bbd807fe0fa1ff1821e924bafa1729de27332d9f2f5a10c3efe1/vimeo-prod-skyfire-std-us/01/3522/5/142613842/428326949.mp4">
-</video>
 
 @stop

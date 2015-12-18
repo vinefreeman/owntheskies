@@ -11,6 +11,7 @@ body, body.login{
                 webkit-font-smoothing: antialiased;
                 font-smoothing: antialiased;
                 text-rendering: optimizeLegibility;
+                font-size: 14px
             }
 body.login{
     background: url(/images/login_a380.jpg) no-repeat center center fixed; 
@@ -52,6 +53,14 @@ font-size: 26px
     color: #ffff00;
     font-size: 14px
 }
+.noflights .glyphicon{
+    font-size: 120px;
+    color: #33331F;
+    margin-top: 30px;
+}
+.header{
+    margin-bottom: 60px;
+}
 p.help a, p a{
     color: #ffff00;
     text-decoration: underline;
@@ -84,7 +93,7 @@ h1 {
     margin-bottom: 80px;
 }
 .category h1{
-    margin-bottom: 12px;
+    margin-bottom: 40px;
     margin-top: 40px;
 }
 h1 span.glyphicon{
@@ -109,6 +118,10 @@ p.system{
     padding: 10px 20px;
     font-size: 30px;
     display: inline-block;
+      -webkit-transition: all 0.4s ease-in-out;
+     -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .container li a:hover{
     background-color: #ffff00;
@@ -258,11 +271,52 @@ form elements
       height: 130px;
       margin-bottom: 30px;
 }
+
 .airportimglist a{
     display: block;
     height: 100%;
     width: 100%;
     color: #333;
+     -webkit-transition: all 0.4s ease-in-out;
+     -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.airportimglist a:hover{
+    background-color: #222;
+    opacity: .7;
+  
+    }
+
+.airportimglist a:hover span{
+    color: #FFFF00;
+    left: 20px;
+
+    -webkit-transition: all 0.4s ease-in-out;
+     -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.airportimglist a span{
+    background-color: #222;
+    padding: 2px;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    opacity: .8
+      -webkit-transition: all 0.4s ease-in-out;
+     -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
 }
 /*
 Login elements

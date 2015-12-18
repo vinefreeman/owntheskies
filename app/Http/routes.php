@@ -25,8 +25,9 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
-Route::get('/', 'AirportsController@index');
-Route::get('/home', 'AirportsController@index');
+
+Route::get('/', 'WelcomeController@index');
+Route::get('/home', 'WelcomeController@index');
 Route::get('/airport-img', 'AirportsController@showimg');
 /*
 Route::get('airports/{airport}', 'Airports@show');
