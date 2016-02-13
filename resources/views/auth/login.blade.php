@@ -4,7 +4,7 @@
 <!-- resources/views/auth/login.blade.php -->
 <br />
 <div class="col-md-6 col-md-offset-3 col-sm-12">
-<h2 class="loginHeader"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> LOGIN PILOT</h2>
+<h2 class="loginHeader"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> LOGIN Below</h2>
     <form method="POST" action="/auth/login">
        <!-- {!! csrf_field() !!}-->
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
