@@ -6,7 +6,8 @@
     <h1 class="fade-in two"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Airports</h1>
     <hr />
 
-    <h2>Your full list of available airports is below! Don't forget you can add some more yourself or edit the ones you see here, sweet! </h2>
+    <h2>Your full list of available airports is below!</h2> 
+    <p>Dont forget you can add some more yourself or edit the ones you see here, sweet!</p>
        </div>
   </div>
 <div class="row">
