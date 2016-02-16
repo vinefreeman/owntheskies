@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="apple-touch-icon" href="/apple-touch-icon-72×72-precomposed.png">
     </head>
     <body class="@yield('bodyClass')">
 
