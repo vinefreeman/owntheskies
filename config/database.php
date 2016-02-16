@@ -60,7 +60,7 @@ return [
             'username'  => env('DB_USER'),
             'password'  => env('DB_PASSWORD'),
             'charset'   => 'utf8',
-            'port'      => '3306',
+            'port'      => '4567',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
             'strict'    => false,
@@ -69,7 +69,7 @@ return [
         'mysql-tunnel' => [
                 'driver'    => 'mysql',
                 'host'      => '127.0.0.1',
-                'port'      => '13306',
+                'port'      => '4567',
                 'database'  => 'owntheskies',
                 'username'  => 'owntheskies',
                 'password'  => env('DB_PASSWORD', ''),
