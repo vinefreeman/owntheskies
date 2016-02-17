@@ -111,7 +111,7 @@ class AirportsController extends Controller
     {
         
         $airport->delete();
-        \Session::flash('flash_message', 'Success! Airport deleted');
+        Session::flash('flash_message', 'Success! Airport deleted');
         return redirect('airports');
     }
 
