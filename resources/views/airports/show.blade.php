@@ -33,7 +33,13 @@
 </div>
 <!--Comment -->
  <div class="editairport col-md-offset-1">
-     <a href="/airports/{{ $airport->slug }}/edit" class="btn btn-success fade-in three"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Edit Airport</a><br /><p class="fade-in three system">Airport last updated: {{ $airport->updated_at}}</p>
+     <a href="/airports/{{ $airport->slug }}/edit" class="btn btn-success fade-in three"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Edit Airport</a><br />
+     <p class="fade-in three system">Airport created 
+      @if($airport->created_by)
+        by {{ $airport->created_by }} 
+      @endif
+        on {{ $airport->created_at->format('d M Y') }} and was 
+        last updated: {{ $airport->updated_at->format('d M Y')}} by {{ $airport->update_by }}</p>
    </div>
     <hr class="fade-in two" />
    {!! link_to_route('airports_path', 'View Available Airports', array(), array('class' => 'button fade-in two')) !!}

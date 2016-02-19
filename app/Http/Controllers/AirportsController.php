@@ -103,7 +103,7 @@ class AirportsController extends Controller
         // $airport = $this->airport->whereSlug($slug)->first();
 
          $airport->fill($request->input())->save();
-            \Session::flash('flash_message', 'Success! Airport updated');
+         \Session::flash('flash_message', 'Success! Airport updated');
          return redirect('airports/' .  $airport->slug);
     }
 

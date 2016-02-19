@@ -10,7 +10,7 @@
 
 	    	@include ('airports.form')
 
-
+	    	
 		{!! Form::close() !!}    
 
 		{!! Form::open(['method' => 'DELETE', 'route' => ['airport_path', $airport->slug]]) !!}

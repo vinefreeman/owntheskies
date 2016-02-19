@@ -60,4 +60,5 @@
 	    	<div class="form-group">
 		    	{!! Form::button('<i class="glyphicon glyphicon-flash"></i> Update Airport', array('type' => 'submit', 'class' => 'btn btn-success')) !!}
 
+		    	{!! Form::hidden('update_by', Auth::user()->name) !!}
 	    	</div>
