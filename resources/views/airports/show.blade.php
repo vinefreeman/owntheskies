@@ -39,7 +39,15 @@
         by {{ $airport->created_by }} 
       @endif
         on {{ $airport->created_at->format('d M Y') }} and was 
-        last updated: {{ $airport->updated_at->format('d M Y')}} by {{ $airport->update_by }}</p>
+        last updated {{ $airport->updated_at->diffForHumans() }}
+      @if($airport->update_by)
+        @if($airport->update_by == Auth::user()->name)
+          by you. 
+        @else 
+          by {{ $airport->update_by }}.
+        @endif
+      @endif
+        </p>
    </div>
     <hr class="fade-in two" />
    {!! link_to_route('airports_path', 'View Available Airports', array(), array('class' => 'button fade-in two')) !!}
