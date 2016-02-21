@@ -7,7 +7,7 @@
 <h2 class="loginHeader"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> LOGIN PILOT</h2>
     <form method="POST" action="/auth/login">
        <!-- {!! csrf_field() !!}-->
-        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        <input type="hidden" name="_token" value="{!!  csrf_token() !!}">
          <div class="form-group">
             <label for="email">Email</label>
             <input type="email" name="email" value="{{ old('email') }}">
