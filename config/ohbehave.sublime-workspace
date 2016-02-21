@@ -95,6 +95,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/vinny/Documents/Dev/projects/public/parentpoints/database/migrations/2016_02_15_234705_create_tasks_table.php",
+			"settings":
+			{
+				"buffer_size": 612,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/vinny/Documents/Dev/projects/public/parentpoints/database/seeds/DatabaseSeeder.php",
+			"settings":
+			{
+				"buffer_size": 240,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -141,10 +157,16 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/vinny/Documents/Dev/projects/public/parentpoints"
+		"/Users/vinny/Documents/Dev/projects/public/parentpoints",
+		"/Users/vinny/Documents/Dev/projects/public/parentpoints/app",
+		"/Users/vinny/Documents/Dev/projects/public/parentpoints/app/Http",
+		"/Users/vinny/Documents/Dev/projects/public/parentpoints/database/seeds",
+		"/Users/vinny/Documents/Dev/projects/public/parentpoints/resources"
 	],
 	"file_history":
 	[
+		"/Users/vinny/Documents/Dev/projects/public/parentpoints/.env",
+		"/Users/vinny/Documents/Dev/projects/public/parentpoints/config/database.php",
 		"/Users/vinny/Documents/Dev/projects/public/flightdeck/resources/views/airports/index.blade.php",
 		"/Users/vinny/Documents/Dev/projects/public/flightdeck/.env",
 		"/Users/vinny/Documents/Dev/projects/public/flightdeck/app/Http/routes.php",
@@ -269,8 +291,67 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/vinny/Documents/Dev/projects/public/parentpoints/database/migrations/2016_02_15_234705_create_tasks_table.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 612,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								446,
+								446
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/vinny/Documents/Dev/projects/public/parentpoints/database/seeds/DatabaseSeeder.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],

@@ -30,6 +30,7 @@ class AirportsController extends Controller
     {
        // $airports = Airport::get();
     	$airports = $this->airport->orderBy('title', 'DSC')->get();
+        
         return view('airports.index', compact('airports'));
 
     }
@@ -114,5 +115,6 @@ class AirportsController extends Controller
         \Session::flash('flash_message', 'Success! Airport deleted');
         return redirect('airports');
     }
+
 
 }

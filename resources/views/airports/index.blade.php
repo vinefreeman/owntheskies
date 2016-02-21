@@ -14,7 +14,8 @@
 	<!-- SHOW IMAGE LIST-->
 	<div class="col-md-10 col-md-offset-1">
     @foreach ($airports as $airport)
-    	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 fade-in three airportimglist" style="background-image: url('{{ $airport->imglink }}')"><a href="/airports/{{ $airport->slug}}"><span>{{ $airport->title }}<br />({{ $airport->code }})</span></a>
+
+    	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 fade-in three airportimglist" style="background-image: url({{ ! empty($airport->imglink) ? $airport->imglink : '/images/no-img.jpg' }}); background-size: 90% auto"><a href="/airports/{{ $airport->slug}}"><span>{{ $airport->title }}<br />({{ $airport->code }})</span></a>
 
     	</div>
     @endforeach

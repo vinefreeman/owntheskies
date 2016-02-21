@@ -25,9 +25,9 @@
 
   </div>
   <div class="col-md-6 fade-in two">
-   @if($airport->imglink)
-          <img src="{{ $airport->imglink }}" alt="{{  $airport->title }}" class="img-responsive" />
-      @endif
+   
+          <img src="{{ ! empty($airport->imglink) ? $airport->imglink : '/images/no-img.jpg' }}" alt="{{  $airport->title }}" class="img-responsive" />
+      
     </div>    
   
 </div>

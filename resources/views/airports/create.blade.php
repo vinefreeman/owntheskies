@@ -9,6 +9,8 @@
 
 	    	@include ('airports.form')
 
+	    	{!! Form::hidden('created_by', Auth::user()->name) !!}	
+		
 		{!! Form::close() !!}    
 
 	    <br />
