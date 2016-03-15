@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddToAirportsTable extends Migration
+class MoreUpdatesAirlineTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,8 +12,10 @@ class AddToAirportsTable extends Migration
      */
     public function up()
     {
-        Schema::table('airports', function (Blueprint $table) {
+        Schema::table('airlines', function (Blueprint $table) {
             //
+            $table->string('created_by');
+             $table->string('update_by');
         });
     }
 
@@ -24,8 +26,10 @@ class AddToAirportsTable extends Migration
      */
     public function down()
     {
-        Schema::table('airports', function (Blueprint $table) {
+        Schema::table('airlines', function (Blueprint $table) {
             //
+            $table->dropColumn('created_by');
+             $table->dropColumn('update_by');
         });
     }
 }

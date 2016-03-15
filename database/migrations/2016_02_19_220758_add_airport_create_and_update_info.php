@@ -27,5 +27,7 @@ class AddAirportCreateAndUpdateInfo extends Migration
     public function down()
     {
         //
+        $table->dropColumn('created_by');
+        $table->dropColumn('update_by');
     }
 }

@@ -27,7 +27,7 @@ class UpdateAirlineTable extends Migration
     {
         Schema::table('airlines', function (Blueprint $table) {
             //
-              Schema::drop('airlines');
+              $table->dropColumn('descrip');
         });
     }
 }

@@ -32,6 +32,12 @@ class AddToAirlinesTable extends Migration
     {
         Schema::table('airlines', function (Blueprint $table) {
             //
+            $table->dropColumn('name');
+            $table->dropColumn('code');
+            $table->dropColumn('slug');
+            $table->dropColumn('logo_link');
+            $table->dropColumn('photo_link');
+            $table->dropColumn('aircraft_id');
         });
     }
 }
