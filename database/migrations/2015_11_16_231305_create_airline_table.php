@@ -15,6 +15,11 @@ class CreateAirlineTable extends Migration
         Schema::create('airlines', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->string('name');
+            $table->string('code', 2);
+            $table->string('slug')->unique;
+            $table->string('logo_link');
+            $table->string('photo_link');
         });
     }
 
