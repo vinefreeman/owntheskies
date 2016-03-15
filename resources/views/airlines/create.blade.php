@@ -2,12 +2,12 @@
 
 @section('content')
 	<div class="edit">
-	    <h1><span class="glyphicon glyphicon-plane" aria-hidden="true"></span> Add a new Airport</h1>
+	    <h1><span class="glyphicon glyphicon-plane" aria-hidden="true"></span> Add a new Airline</h1>
 	    <!-- illuminate form elements i config/app.php -->
 
-	     {!! Form::open(['route' => 'airports_path']) !!} 
+	    {!! Form::open(['route' => 'airlines_path']) !!}
 
-	    	@include ('airports.form')
+	    	@include ('airlines.form')
 
 	    	{!! Form::hidden('created_by', Auth::user()->name) !!}	
 		
@@ -16,6 +16,6 @@
 	    <br />
 	</div>
 	<hr class="fade-in two" />
-	<a href="/" class="button fade-in two">RETURN TO AIRPORTS</a>
+	<a href="/" class="button fade-in two">VIEW ALL AIRLINES</a>
 	
 @stop

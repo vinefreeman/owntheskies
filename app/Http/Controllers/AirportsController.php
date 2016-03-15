@@ -45,6 +45,7 @@ class AirportsController extends Controller
     {	
     	//$airport = $this->airport->whereSlug($slug)->first();
     	return view('airports.show', compact('airport'));
+
     }
 
     /**
@@ -69,7 +70,9 @@ class AirportsController extends Controller
     public function create(Airport $airport)
     {   
         //$airport = $this->airport->whereSlug($slug)->first();
-        return view('airports.create');
+         $buttontext = 'Create';
+         return view('airports.create')->with('buttontext', $buttontext);
+     
     }
     
      public function store(CreateAirportRequest $request, Airport $airport)
@@ -89,8 +92,9 @@ class AirportsController extends Controller
     public function edit(Airport $airport)
     {   
         //$airport = $this->airport->whereSlug($slug)->first();
-        return view('airports.edit', compact('airport'));
-
+        $buttontext = 'Update';
+        return view('airports.edit', compact('airport'))->with('buttontext', $buttontext);
+    
     }
 
     /**

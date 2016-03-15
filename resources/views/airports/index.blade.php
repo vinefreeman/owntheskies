@@ -2,8 +2,8 @@
 @section('bodyClass', 'category')
 @section('content')
 <div class="row header">
-	<div class="col-md-12">
-    <h1 class="fade-in two"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Airports</h1>
+	<div class="col-md-12 fade-in two">
+    <h1><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Airports</h1>
     <hr />
 
     <h2>Your full list of available airports is below!</h2> 
@@ -15,7 +15,7 @@
 	<div class="col-md-10 col-md-offset-1">
     @foreach ($airports as $airport)
 
-    	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 fade-in three airportimglist" style="background-image: url({{ ! empty($airport->imglink) ? $airport->imglink : '/images/no-img.jpg' }}); background-size: 90% auto"><a href="/airports/{{ $airport->slug}}"><span>{{ $airport->title }}<br />({{ $airport->code }})</span></a>
+    	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 fade-in three airportimglist" style="background-image: url({{ ! empty($airport->imglink) ? $airport->imglink : '/images/no-img.jpg' }}); background-size: 88% auto"><a href="/airports/{{ $airport->slug}}"><span>{{ $airport->title }}<br />({{ $airport->code }})</span></a>
 
     	</div>
     @endforeach

@@ -45,7 +45,14 @@ font-size: 26px
     margin-top: 20px;
     background-color: #ffff00;
 }
-
+.btn{
+    font-size: 20px;
+    border-radius: 0;
+}
+.right{
+    float: right;
+    margin-top: -57px;
+}
 .login button.btn-default:hover{
     background-color: #CCCC04
 }
@@ -76,9 +83,10 @@ p.help a.submit
     color: #fff;
     text-decoration: none;
 }
-.right{
+.login .right{
     float: right;
     display: block;
+    margin: 0;
 }
 a.login{
     /*float: right;
@@ -160,7 +168,49 @@ a.button:active{
     border-bottom: 3px solid #222;
 }
 
-
+.total{
+    font-weight: 900;
+    color: #222222;
+    background-color: #3E3E1D;
+    margin-top: 37px;
+    border-right: 10px solid #222;
+    min-height: 277px;
+}
+.total span{
+    font-size: 96px;
+}
+.total .btn-default{
+    color: #7B7B03;
+    background-color: #222222;
+    border: none;
+    display: block;
+    margin-bottom: 10px;
+}
+.total a{
+        color: #7B7B03;
+    background-color: #222222;
+    border: none;
+    display: block;
+    /* margin-bottom: 10px; */
+    position: absolute;
+    bottom: 0;
+    width: 92%;
+    left: 0;
+    margin: 10px;
+}
+.total img{
+    opacity: .8;
+    padding-top: 10px;
+    /*height: 120px;
+    width: auto;*/
+    margin: 0 auto;
+}
+.total a.btn-default:hover{
+    background-color: #111;
+}
+.total:hover{
+    background-color: #ffff00;
+}
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -268,9 +318,17 @@ form elements
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: 90% 100%;
+      background-size: 88% 100%;
       height: 130px;
       margin-bottom: 30px;
+}
+.airportimglist a:hover{
+     background-size: 130% 100% !important;
+}
+
+.logo {
+    width: 50%;
+    height: auto;
 }
 
 .airportimglist a{
@@ -288,6 +346,9 @@ form elements
 .airportimglist a:hover{
     background-color: #222;
     opacity: .7;
+    height: 100%;
+    width: 100%;
+
   
     }
 

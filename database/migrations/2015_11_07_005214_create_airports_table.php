@@ -34,6 +34,9 @@ class CreateAirportsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('airports');
+        Schema::table('questions', function (Blueprint $table) {
+            //
+            Schema::drop('questions');
+        });
     }
 }

@@ -16,7 +16,8 @@
 		{!! Form::open(['method' => 'DELETE', 'route' => ['airport_path', $airport->slug]]) !!}
 
 			<div class="form-group">	
-				{!! Form::submit('Delete Airport', ['class' => 'btn btn-danger fade-in three']) !!}	
+				{!! Form::button("<i class='glyphicon glyphicon-remove'></i> Delete airport", array('type' => 'submit', 'class' => 'btn btn-danger fade-in three right')) !!}
+				
 			</div>
 
 		{!! Form::close() !!}    

@@ -19,3 +19,13 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Airline::class, function (Faker\Generator $faker) {
+	$company = $faker->company;
+	$slug = str_replace(' ', '-', $company);
+    return [
+        'name' => $company,
+        'code' => str_random(2),
+        'slug' => $slug,
+    ];
+});

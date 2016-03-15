@@ -14,6 +14,9 @@
                 <li class="{{ Request::is('airports') ? 'active' : ''}}">
                     {!! link_to_route('airports_path', 'Airports') !!}
                 </li>
+                <li class="{{ Request::is('airlines') ? 'active' : ''}}">
+                    {!! link_to('airlines', 'Airlines') !!}
+                </li>
                 <li>
                     <a href="#">Admin</a>
                 </li>
