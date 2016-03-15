@@ -13,6 +13,7 @@ class AddToAirlinesTable extends Migration
     public function up()
     {
         Schema::table('airlines', function (Blueprint $table) {
+            $table->dropColumn('name');
             $table->string('names');
             $table->string('code', 2);
             $table->string('slug')->unique;
