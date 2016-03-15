@@ -14,7 +14,6 @@ class AddToAirlinesTable extends Migration
     {
         Schema::table('airlines', function (Blueprint $table) {
             // added main columns for table
-            $table->string('name');
             $table->string('code', 2);
             $table->string('slug')->unique;
             $table->string('logo_link');
