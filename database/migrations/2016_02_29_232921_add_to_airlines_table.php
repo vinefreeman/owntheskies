@@ -19,7 +19,7 @@ class AddToAirlinesTable extends Migration
             $table->string('slug')->unique;
             $table->string('logo_link');
             $table->string('photo_link');
-            $table->foreign('aircraft_id')->references('id')->on('aircraft')->onDelete('cascade');
+          
         });
     }
 
@@ -37,7 +37,7 @@ class AddToAirlinesTable extends Migration
             $table->dropColumn('slug');
             $table->dropColumn('logo_link');
             $table->dropColumn('photo_link');
-            $table->dropColumn('aircraft_id');
+            
         });
     }
 }
