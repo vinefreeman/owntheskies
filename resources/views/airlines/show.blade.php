@@ -1,7 +1,7 @@
 @extends('default')
 @section('bodyClass', 'airportsingle')
 @section('content')
-<div class="row">
+<div class="row fade-in one">
    <h1><span class="glyphicon glyphicon-send" aria-hidden="true"></span>  {{ $airline->name }}</h1>
    
 </div>
@@ -30,7 +30,7 @@
 <!--Comment -->
  <div class="editairport col-md-offset-1">
      <a href="/airlines/{{ $airline->slug }}/edit" class="btn btn-success fade-in three"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Edit airline</a><br />
-     <p class="fade-in three system">airline created 
+     <p class="fade-in three system">Airline created 
       @if($airline->created_by)
         by {{ $airline->created_by }} 
       @endif
