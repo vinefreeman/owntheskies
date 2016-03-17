@@ -161,7 +161,6 @@ span.triangle{
     position: fixed;
     /*left: 0px;*/
     display: block;
-    margin-top: -10px;
     margin-left: -22px;
     background-color: #151513;
     border-left: 1px solid #000;

@@ -23,7 +23,7 @@
                 <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> {{ Session::get('flash_message') }}
                 </div>
             @endif
-            <a href="#menu-toggle" class="menutoggle" id="menu-toggle"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+            <a href="#menu-toggle" class="menutoggle" id="menu-toggle"><span class="glyphicon glyphicon-send" aria-hidden="true"></span></a>
 	    	@yield('content')
 	    </div>
         
