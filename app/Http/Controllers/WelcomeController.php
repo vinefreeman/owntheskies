@@ -34,6 +34,7 @@ class WelcomeController extends Controller
 				'airlinename'	=> $latest->name,
 				'airlineslug'	=> $latest->slug,
 				'logo'			=> $latest->logo_link,
+                
     		));
     }
 }

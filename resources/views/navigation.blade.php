@@ -7,16 +7,19 @@
                     </a>
                 </li>
                 @if (Auth::check())
-                <li class="{{ Request::is('/') ? 'active' : ''}}">
+                <li class="{{ setActive('/') }}">
+                     {!! setActiveMenu('/') !!}
                     <a href="/"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a>
                 </li>
-                <li class="{{ Request::is('airports') ? 'active' : ''}}">
+                <li class="{{ setActive('airports*') }}">
+                    {!! setActiveMenu('airports*') !!}
                     <a href="{{ URL::route('airports_path') }}">
                         <span class="glyphicon glyphicon-road"></span>
                         Airports    
                     </a>
                 </li>
-                <li class="{{ Request::is('airlines') ? 'active' : ''}}">
+                <li class="{{ setActive('airlines*') }}">
+                 {!! setActiveMenu('airlines*') !!}
                     <a href="{{ URL::route('airlines_path') }}">
                         <span class="glyphicon glyphicon-globe"></span>
                         Airlines    
