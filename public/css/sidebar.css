@@ -62,21 +62,39 @@
     position: absolute;
     top: 0;
     width: 110px;
+    width: 200px;
     margin: 0;
     padding: 0;
     list-style: none;
+    text-align: left;
+}
+.system{
+    height: 100%;
+    position: relative;
+    z-index: -99;
+}
+.sidebar-system{
+    position: absolute;
+    bottom: 10px;
+    width: 110px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
 }
 
 .sidebar-nav li {
     /*text-indent: 20px;*/
     line-height: 20px;
+    
 }
 
-.sidebar-nav li a {
+.sidebar-nav li a, .sidebar-system li a {
     display: block;
     text-decoration: none;
     color: #999999;
-    padding: 10px 0;
+    padding: 10px 0 10px 30px;
 }
 
 .sidebar-nav li a:hover {
@@ -94,10 +112,14 @@
     height: 65px;
     font-size: 18px;
     margin-bottom: 30px;
+    padding-top: 20px;
     /*line-height: 60px;*/
 }
-.sidebar-nav > .sidebar-brand a.glyphicon{
-
+.sidebar-nav > .sidebar-brand .glyphicon{
+    margin-right: 10px;
+}
+.sidebar-nav .glyphicon, .sidebar-system .glyphicon{
+    margin-right: 10px;
 }
 .sidebar-nav > .sidebar-brand a {
     color: #FFFF00;
@@ -121,21 +143,57 @@ a.login{
     background: rgba(34, 34, 34, 1);
 } 
 
+#menu-toggle{
+    height: 40px;
+    width:40px;
+    /*position: absolute;*/
+    position: fixed;
+    /*left: 0px;*/
+    display: block;
+    margin-top: -10px;
+    margin-left: -22px;
+    background-color: #151513;
+    border-left: 1px solid #000;
+    color: #666;
+    z-index: 99;
+}
+.toggled #menu-toggle{
+    
+}
+#menu-toggle .glyphicon{
+    margin-top: 12px;
+    vertical-align: middle;
+}
+@media(min-width:320px ){
+    #sidebar-wrapper{
+        width: 200px;
+    }
+     #wrapper {
+        padding-left: 200px;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0px;
+    }
+     #wrapper.toggled {
+        padding-left: 0px;
+    }
+}
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 110px;
+        padding-left: 200px;
     }
 
     #wrapper.toggled {
-        padding-left: 5px;
+        padding-left: 0px;
     }
 
     #sidebar-wrapper {
         width: 110px;
+        width: 200px;
     }
 
     #wrapper.toggled #sidebar-wrapper {
-        width: 10px;
+        width: 0px;
     }
 
     .login #wrapper.toggled #sidebar-wrapper {

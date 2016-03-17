@@ -3,28 +3,45 @@
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="{{ url('/') }}">
-                    <span class="glyphicon glyphicon-send" aria-hidden="true"></span><Br />
-                       FlightDeck
+                    <span class="glyphicon glyphicon-send" aria-hidden="true"></span> FlightDeck
                     </a>
                 </li>
                 @if (Auth::check())
                 <li class="{{ Request::is('/') ? 'active' : ''}}">
-                    <a href="/">Dashboard</a>
+                    <a href="/"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a>
                 </li>
                 <li class="{{ Request::is('airports') ? 'active' : ''}}">
-                    {!! link_to_route('airports_path', 'Airports') !!}
+                    <a href="{{ URL::route('airports_path') }}">
+                        <span class="glyphicon glyphicon-road"></span>
+                        Airports    
+                    </a>
                 </li>
                 <li class="{{ Request::is('airlines') ? 'active' : ''}}">
-                    {!! link_to('airlines', 'Airlines') !!}
+                    <a href="{{ URL::route('airlines_path') }}">
+                        <span class="glyphicon glyphicon-globe"></span>
+                        Airlines    
+                    </a>
                 </li>
                 <li>
-                    <a href="#">Admin</a>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-wrench"></span>
+                        Admin    
+                    </a>
                 </li>
-                <hr />
                 
-                    <li>
-                        <a href="/auth/logout" class="login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><br />Logout<br />{{ Auth::user()->name }}</a>
-                    </li>
+                </ul>
+                <div class="system">
+                    <ul class="sidebar-system">
+                    <hr />
+                        <li>
+                            <a href="/auth/logout" class="login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Logout {{ Auth::user()->name }}</a>
+                        </li>
+                        <hr />
+                        <li>
+                            <span class="ver">BETA v1.0 {{ App::environment() }}</span>
+                        </li>
+                    </ul> 
+                </div>
                @endif
             </ul>
         </div>

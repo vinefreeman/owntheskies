@@ -20,14 +20,13 @@ body.login{
       -o-background-size: cover;
       background-size: cover;
 }
-
 .login form{
-padding: 40px;
-text-align: left;
-background-color: #222;
-opacity: 0.7;
-border: 1px solid #656518;
-font-size: 26px
+    padding: 40px;
+    text-align: left;
+    background-color: #222;
+    opacity: 0.7;
+    border: 1px solid #656518;
+    font-size: 26px
 }
 .login form input{
     background-color: #111;
@@ -66,7 +65,7 @@ font-size: 26px
     margin-top: 30px;
 }
 .header{
-    margin-bottom: 60px;
+  /*  margin-bottom: 60px;*/
 }
 p.help a, p a{
     color: #ffff00;
@@ -79,7 +78,6 @@ p a:hover{
 }
 p.help a.submit
 {
-
     color: #fff;
     text-decoration: none;
 }
@@ -138,13 +136,11 @@ p.system{
     padding: 10px 20px;
     text-decoration: none;
     font-size: 30px;
-    }
-
+}
 .container li a:active{
     background-color: #111;
     color: #ffff00;
 }
-
 a.button{
     background-color: #ffff00;
     color: #333;
@@ -161,13 +157,11 @@ a.button:hover{
     color: #ffff00;
     border-bottom: 3px solid #666;
 }
-
 a.button:active{
     background-color: #111;
     color: #ffff00;
     border-bottom: 3px solid #222;
 }
-
 .total{
     font-weight: 900;
     color: #222222;
@@ -214,7 +208,6 @@ a.button:active{
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
 .fade-in {
     opacity:0;  /* make things invisible upon start */
     -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -229,7 +222,6 @@ a.button:active{
     -moz-animation-duration:1s;
     animation-duration:1s;
 }
- 
 .fade-in.one {
 -webkit-animation-delay: 0.3s;
 -moz-animation-delay: 0.3s;
@@ -245,7 +237,6 @@ animation-delay: 0.5s;
 -moz-animation-delay:0.7s;
 animation-delay: 0.7s;
 }
-
 hr{
     border: 0;
     border-bottom: 1px dashed #333;
@@ -296,41 +287,32 @@ form elements
 .form-group label{
     font-size: 16px;
 }
-#menu-toggle{
-    height: 40px;
-    width:40px;
-    position: absolute;
-    left: 0px;
-    display: block;
-    margin-top: -10px;
-    background-color: #151513;
-    border-left: 1px solid #000;
-    color: #666;
-    z-index: 99;
-}
-#menu-toggle .glyphicon{
-    margin-top: 12px;
-    vertical-align: middle;
-}
+
 .airportimglist{
     background-repeat:  no-repeat;
-    background-position: center;  
+    background-position: center ;  
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: 88% 100%;
-      height: 130px;
+     /* background-size: 100% auto !important;*/
+      background-size: cover !important;
+      height: 140px;
       margin-bottom: 30px;
+    z-index: -99;
+    position: relative;
+    transition: all .8s ease-in-out;
 }
-.airportimglist a:hover{
-     background-size: 130% 100% !important;
+.airportimglist:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); 
+    
+    z-index: 99;
 }
-
 .logo {
     width: 50%;
     height: auto;
 }
-
 .airportimglist a{
     display: block;
     height: 100%;
@@ -339,30 +321,20 @@ form elements
      -webkit-transition: all 0.4s ease-in-out;
      -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    
+    transition: all 0.4s ease-in-out;   
 }
-
 .airportimglist a:hover{
     background-color: #222;
     opacity: .7;
-    height: 100%;
-    width: 100%;
-
-  
     }
-
 .airportimglist a:hover span{
     color: #FFFF00;
-    left: 20px;
-
+    left: 10px;
     -webkit-transition: all 0.4s ease-in-out;
      -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-
-
 .airportimglist a span{
     background-color: #222;
     padding: 2px;
@@ -378,8 +350,7 @@ form elements
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-
-}
+/*} REMOVED MARCH 16*/
 /*
 Login elements
 */
@@ -401,4 +372,10 @@ Login elements
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+span.ver{
+    font-size: 11px;
+    font-family: monospace, arial, sans-serif;
+    color: #666;
+    padding-left: 30px;
 }
