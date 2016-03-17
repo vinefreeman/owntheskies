@@ -3,7 +3,7 @@
 @section('content')
 <div class="row header">
 	<div class="col-md-12 fade-in two">
-         <h1><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Airlines</h1>
+         <h1><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Airlines</h1>
          <hr />
        <!-- <h2>The full list of available airlines is below...</h2> 
         <p>Don't forget you can add some more yourself or edit the ones you see here, sweet!</p> -->

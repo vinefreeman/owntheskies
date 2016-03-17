@@ -2,7 +2,7 @@
 @section('bodyClass', 'airportsingle')
 @section('content')
 <div class="row fade-in one">
-   <h1><span class="glyphicon glyphicon-send" aria-hidden="true"></span>  {{ $airport->title }}</h1>
+   <h1><span class="glyphicon glyphicon-road" aria-hidden="true"></span>  {{ $airport->title }}</h1>
    
 </div>
 <div class="row">

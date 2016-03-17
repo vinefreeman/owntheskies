@@ -107,6 +107,7 @@ h1 {
 }
 h1 span.glyphicon{
     font-size: 70% !important;
+    margin-right: 10px;
 }
 p.system{
     color: #666;
