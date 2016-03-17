@@ -11,7 +11,7 @@
     </head>
     <body class="@yield('bodyClass')">
 
-    <div id="wrapper" class="">
+    <div id="wrapper" class="fade-in one">
       <!-- Sidebar -->
         @include ('navigation')
     

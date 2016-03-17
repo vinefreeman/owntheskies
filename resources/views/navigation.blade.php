@@ -1,5 +1,5 @@
 <!--  // Main Left Navigation -->
-<div id="sidebar-wrapper">
+<div id="sidebar-wrapper" class="fade-in one">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="{{ url('/') }}">

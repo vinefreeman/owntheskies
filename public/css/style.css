@@ -64,6 +64,9 @@ body.login{
     color: #33331F;
     margin-top: 30px;
 }
+.noflights{
+    margin-top: 50px;
+}
 .header{
   /*  margin-bottom: 60px;*/
 }
