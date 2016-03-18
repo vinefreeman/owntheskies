@@ -9,3 +9,8 @@ function setActiveMenu($path)
 {
 	return Request::is($path) ? '<span class="triangle"></span>' : '';
 }
+
+function numberFormat($number)
+{
+	return number_format($number);
+}

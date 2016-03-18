@@ -200,8 +200,7 @@ a.button:active{
 .total img{
     opacity: .8;
     padding-top: 10px;
-    /*height: 120px;
-    width: auto;*/
+    max-height: 150px;
     margin: 0 auto;
 }
 .total a.btn-default:hover{
@@ -397,4 +396,15 @@ span.ver{
 .profile img{
     height: 200px;
     border: 10px solid #2B2B2B;
+}
+
+.table>tbody>tr>th, .table>thead>tr>th{
+    border-top: 1px dashed #333;
+    border-bottom: 1px dashed #333;
+    background-color: #21211D
+}
+.table>tbody>tr>td{
+     border-top: 1px dashed #333;
+     text-align: left;
+     color: #999999;
 }

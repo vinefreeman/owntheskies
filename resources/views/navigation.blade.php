@@ -29,16 +29,16 @@
                         Airlines    
                     </a>
                 </li>
-                <li class="{{ setActive('planes*') }}">
-                 {!! setActiveMenu('planes*') !!}
-                    <a href="#">
+                <li class="{{ setActive('aircraft*') }}">
+                 {!! setActiveMenu('aircraft*') !!}
+                    <a href="{{ URL::route('aircrafts_path') }}">
                         <span class="glyphicon glyphicon-plane"></span>
-                        Planes 
+                        Aircraft
                     </a>
                 </li>
                 <li class="{{ setActive('pilots*') }}">
                  {!! setActiveMenu('pilots*') !!}
-                    <a href="pilots">
+                    <a href="/pilots">
                         <span class="glyphicon glyphicon-user"></span>
                         Pilot profile
                     </a>

@@ -21,6 +21,10 @@ Route::bind('airlines', function($slug)
 	return App\Airline::whereSlug($slug)->first();
 });
 
+Route::bind('aircraft', function($slug)
+{
+	return App\Aircraft::whereSlug($slug)->first();
+});
 // Authentication routes...
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
@@ -61,5 +65,19 @@ Route::resource('airports', 'AirportsController', [
 		'destroy'	=> 'airport_path',
 		'create' 	=> 'airport_path',
 		]
+]);
+
+Route::resource('aircraft', 'AircraftController', [
+	'names' => [
+		'index' 	=> 'aircrafts_path',
+		'show' 		=> 'aircraft_path',
+		'showimg'	=> 'aircraft_path',
+		'edit' 		=> 'aircraft_path',
+		'store' 	=> 'aircraft_path',
+		'update' 	=> 'aircraft_path',
+		'destroy'	=> 'aircraft_path',
+		'create' 	=> 'aircraft_path',
+		]
 
 ]);
+
