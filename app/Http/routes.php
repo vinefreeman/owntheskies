@@ -33,6 +33,7 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 // Basic routes...
 Route::get('/', 'WelcomeController@index');
 Route::get('/home', 'WelcomeController@index');
+Route::get('/pilots', 'PilotController@index');
 
 // Category Specific
 Route::resource('airlines', 'AirlinesController', [

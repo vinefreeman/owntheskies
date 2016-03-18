@@ -20,6 +20,8 @@ class CreateAirlineTable extends Migration
             $table->string('slug')->unique;
             $table->string('logo_link');
             $table->string('photo_link');
+            $table->string('created_by');
+            $table->string('update_by');
         });
     }
 

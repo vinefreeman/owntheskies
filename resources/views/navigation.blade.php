@@ -5,6 +5,10 @@
                     <a href="{{ url('/') }}">
                     <span class="glyphicon glyphicon-send" aria-hidden="true"></span> FlightDeck
                     </a>
+                    <span class="username">
+                         <img src="{{ ! empty(Auth::user()->profile_photo) ? Auth::user()->profile_photo : '/images/no-profile.jpg' }}" alt="{{  Auth::user()->name }}" class="img-circle" />   
+                         {{ Auth::user()->name }}
+                     </span>
                 </li>
                 @if (Auth::check())
                 <li class="{{ setActive('/') }}">
@@ -25,26 +29,41 @@
                         Airlines    
                     </a>
                 </li>
+                <li class="{{ setActive('planes*') }}">
+                 {!! setActiveMenu('planes*') !!}
+                    <a href="#">
+                        <span class="glyphicon glyphicon-plane"></span>
+                        Planes 
+                    </a>
+                </li>
+                <li class="{{ setActive('pilots*') }}">
+                 {!! setActiveMenu('pilots*') !!}
+                    <a href="pilots">
+                        <span class="glyphicon glyphicon-user"></span>
+                        Pilot profile
+                    </a>
+                </li>
                 <li>
                     <a href="#">
                         <span class="glyphicon glyphicon-wrench"></span>
                         Admin    
                     </a>
                 </li>
+                 
                 
-                </ul>
-                <div class="system">
-                    <ul class="sidebar-system">
-                    <hr />
-                        <li>
-                            <a href="/auth/logout" class="login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Logout {{ Auth::user()->name }}</a>
-                        </li>
-                        <hr />
-                        <li>
-                            <span class="ver">BETA v1.0 {{ App::environment() }}</span>
-                        </li>
-                    </ul> 
-                </div>
-               @endif
             </ul>
-        </div>
+            <div class="system">
+                <ul class="sidebar-system">
+                <hr />   
+                    <li>
+                            <a href="/auth/logout" class="login"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Logout</a>
+                    </li>
+                    <hr />
+                    <li>
+                        <span class="ver">BETA v1.0 {{ App::environment() }}</span>
+                    </li>
+                </ul> 
+            </div>
+           @endif
+        </ul>
+    </div>

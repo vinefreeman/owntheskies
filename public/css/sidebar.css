@@ -110,21 +110,40 @@
 }
 
 .sidebar-nav > .sidebar-brand {
-    height: 65px;
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding-top: 20px;
     /*line-height: 60px;*/
 }
 .sidebar-nav > .sidebar-brand .glyphicon{
     margin-right: 10px;
 }
+.sidebar-nav li span.username{
+    padding: 20px;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;
+    background-color: #13130D;
+}
+.sidebar-nav li span img{
+    height: 40px;
+    border: 2px solid #2B2B2B;
+    float: left;
+    margin-left: 6px;
+    margin-right: 10px;
+    margin-top: -10px;
+
+}
+.sidebar-nav li{
+    clear: left;
+}
+
 .sidebar-nav .glyphicon, .sidebar-system .glyphicon{
     margin-right: 10px;
 }
 .sidebar-nav > .sidebar-brand a {
     color: #FFFF00;
-
+    margin-bottom: 20px;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {

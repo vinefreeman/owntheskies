@@ -384,3 +384,17 @@ span.ver{
     color: #666;
     padding-left: 30px;
 }
+
+/**
+* USER
+*
+*/
+.pilot{text-align: left}
+.profile .glyphicon{
+    font-size: 120px;
+    opacity: .2;
+}
+.profile img{
+    height: 200px;
+    border: 10px solid #2B2B2B;
+}
